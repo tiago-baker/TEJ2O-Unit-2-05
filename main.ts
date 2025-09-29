@@ -8,20 +8,17 @@
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
-// comment
-let TemperatureKelvin: number
-let TemperatureValue: number
+// shows temperature in kelvin
+let temperatureKelvin: number
 
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
-    // get temperature value
-    TemperatureKelvin = input.temperature()
-    TemperatureValue = (TemperatureKelvin / 273) + 21
-    TemperatureValue = Math.round(TemperatureValue)
+    // get temperature in kelvin
+    temperatureKelvin = input.temperature() + 273
 
     // output temperature
     basic.clearScreen()
-    basic.showString('The Temperature is: ' + TemperatureValue.toString() + 'K.')
+    basic.showString('The Temperature is: ' + temperatureKelvin.toString() + 'K.')
 })
