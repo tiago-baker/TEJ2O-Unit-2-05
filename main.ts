@@ -8,7 +8,7 @@
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
-// gets temperature in kelvin
+// gets temperature in Kelvin
 let temperatureKelvin: number
 
 basic.clearScreen()
